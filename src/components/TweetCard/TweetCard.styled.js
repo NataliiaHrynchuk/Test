@@ -4,6 +4,9 @@ import { ReactComponent as Phrases } from 'images/Phrases.svg';
 import Boy from 'images/Boy.png';
 
 export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 380px;
   height: 460px;
   position: absolute;
@@ -54,4 +57,22 @@ export const Avatar = styled.div`
   background: url(${Boy});
   background-repeat: no-repeat;
   background-size: contain;
+`;
+
+export const TextWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 284px;
+`;
+
+export const Statistics = styled.p`
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+  margin-top: 0px;
+  margin-bottom: 16px;
+  color: #ebd8ff;
+  text-transform: uppercase;
 `;
