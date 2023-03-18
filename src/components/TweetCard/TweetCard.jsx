@@ -1,6 +1,6 @@
 import * as SC from "./TweetCard.styled";
 import { Button } from "components/Button/Button";
-import { useState } from "react";
+// import { useState } from "react";
 
 export const TweetCard = () => {
     // const [followerValue, setFollowerValue] = useState(100500);
