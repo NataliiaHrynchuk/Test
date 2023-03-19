@@ -1,22 +1,12 @@
 import * as SC from './Button.styled';
-import { useState, useEffect } from "react";
 
-export const Button = () => {
-    const [isFollowing, setIsFollowing] = useState(() => JSON.parse(window.localStorage.getItem('isFollowing')) ?? false);
-        
-    const handleClick = () => {
-        setIsFollowing(!isFollowing);
-    };
-
-    useEffect(() => {
-        window.localStorage.setItem('isFollowing', JSON.stringify(isFollowing));
-    }, [ isFollowing]);
-
+export const Button = ({handleClick, backgroundColor, children}) => {
     
     return <SC.FollowBtn
+        style={{background: backgroundColor}}
         onClick={handleClick}
         type="button"
     >
-        {isFollowing ? 'following' : 'follow'}
+        {children}
     </SC.FollowBtn>
 }
