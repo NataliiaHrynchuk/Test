@@ -4,10 +4,14 @@ import { Button } from "components/Button/Button";
 
 export const TweetCard = () => {
     // const [followerValue, setFollowerValue] = useState(100500);
-    // const [isFollowing, setIsFollowing] = useState(false);
+    // const isFollowing = () => JSON.parse(window.localStorage.getItem('isFollowing')) ?? false;
 
-    // const handleChangeFollowing = () => {
-    //     console.log('following changed');
+    // const updateFollowerValue = evt => {
+    //     console.log(evt);
+    //     isFollowing ? 
+    //         setFollowerValue(followerValue + 1) 
+    //         : 
+    //     setFollowerValue(followerValue - 1);
     // };
     return <SC.Container>
         <SC.LogoIcon></SC.LogoIcon>
@@ -19,7 +23,7 @@ export const TweetCard = () => {
             <SC.Statistics>100500 followers</SC.Statistics> 
             {/* <SC.Statistics>{followerValue.toLocaleString('ja-JP')} followers</SC.Statistics> */}
             <Button
-                // onClick={() => console.log('changed')
+                // changeFollowerValue = {updateFollowerValue}
             ></Button>
             </SC.TextWrapper>
     </SC.Container>
