@@ -1,17 +1,10 @@
+import { MainSection } from "./MainSection/MainSection.styled";
 import { TweetCard } from "./TweetCard/TweetCard"; 
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
+    <MainSection>
       <TweetCard></TweetCard>
-    </div>
+    </MainSection>
   );
 };

@@ -9,9 +9,7 @@ export const Container = styled.div`
   align-items: center;
   width: 380px;
   height: 460px;
-  position: absolute;
-  left: 435px;
-  top: 168px;
+  position: relative;
   background: linear-gradient(
     114.99deg,
     #471ca9 -0.99%,
